@@ -5,7 +5,7 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: openjdk
+    container: eclipse-temurin:17
     steps:
       - uses: actions/checkout@v2
       - name: Build Project
