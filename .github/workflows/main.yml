@@ -17,7 +17,7 @@ jobs:
 
   calcadd:
     runs-on: ubuntu-latest
-    container: openjdk
+    container: eclipse-temurin:17
     steps:
       - uses: actions/checkout@v2
       - name: Test Calculator Add
@@ -27,7 +27,7 @@ jobs:
   
   calcsub:
     runs-on: ubuntu-latest
-    container: openjdk
+    container: eclipse-temurin:17
     steps:
       - uses: actions/checkout@v2
       - name: Test Calculator Sub
